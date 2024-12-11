@@ -1,0 +1,45 @@
+Concepto del Paper
+    Introducción
+        Contenido
+            - Planteamiento del problema clínico.
+            - Relevancia de la explicabilidad en IA médica.
+            - Objetivo principal del artículo.
+        Gráficos/Tablas
+            - Diagrama que muestra el flujo general del método propuesto.
+
+    Metodología
+        Contenido
+            - Descripción de los clasificadores usados (MLP, CNN, Autoencoders).
+            - Explicación de las técnicas para generar prototipos (k-means, KDE).
+            - Configuración del espacio latente (VAE, tripletas).
+        Gráficos/Tablas
+            - Tabla comparativa de arquitecturas de clasificadores.
+            - Esquema de un modelo de autoencoder.
+            - Diagrama del pipeline del método.
+
+    Resultados
+        Contenido
+            - Desempeño de los modelos en tareas de clasificación (accuracy, F1-score, AUC).
+            - Separación de clases en el espacio latente.
+            - Calidad de los prototipos generados.
+        Gráficos/Tablas
+            - Tabla de métricas de evaluación para clasificadores.
+            - Gráficos de separación de clases (t-SNE, UMAP).
+            - Ejemplos de prototipos seleccionados.
+
+    Discusión
+        Contenido
+            - Interpretabilidad clínica de los prototipos.
+            - Limitaciones actuales del método.
+            - Comparación con enfoques previos en la literatura.
+        Gráficos/Tablas
+            - Tabla con ventajas/desventajas del método.
+            - Gráfico comparativo con trabajos previos.
+
+    Conclusión
+        Contenido
+            - Resumen de los hallazgos principales.
+            - Impacto potencial en la práctica médica.
+            - Posibles direcciones futuras para extender el trabajo.
+        Gráficos/Tablas
+            - Diagrama que sugiera extensiones futuras del método.

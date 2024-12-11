@@ -1,0 +1,66 @@
+Concepto del Paper
+    Introducción
+        Problema clínico
+            Importancia del diagnóstico en trastornos de la marcha
+            Limitaciones de los métodos actuales (falta de interpretabilidad)
+        Relevancia de la explicabilidad en IA
+            Confianza de especialistas en los modelos
+            Potencial para mejorar el diagnóstico clínico
+        Contexto del análisis de marcha
+            Uso de señales biomecánicas
+            Papel del conjunto de datos GaitRec
+    Metodología
+        Clasificadores usados
+            Perceptrón Multicapa (MLP)
+                2-4 capas ocultas
+                Activación: ReLU
+                Optimización: Adam (learning rate = 0.001)
+            Redes Convolucionales (CNN)
+                Capas convolucionales: 2-3 filtros (tamaño 3)
+                Activación: ReLU
+                MaxPooling para reducción de dimensionalidad
+            Autoencoders
+                Autoencoders estándar
+                    Encoder: 3 capas (ReLU)
+                    Decoder simétrico
+                    Pérdida: Mean Squared Error (MSE)
+                Autoencoders variacionales (VAE)
+                    Latentes: distribuciones Gaussianas
+                    Pérdida: combinación KL-divergence + MSE
+                Encoder con pérdida tripleta
+                    Optimización de distancias intra e inter-clase
+                    Uso de ancla, positivo y negativo
+        Técnicas para generar prototipos
+            K-means
+                Selección de centroides como prototipos
+                Uso del espacio latente generado
+            Kernel Density Estimation (KDE)
+                Identificación de puntos en áreas de alta densidad
+                Priorización de señales representativas
+    Resultados
+        Visualización de separación de clases
+            Uso de t-SNE
+            Uso de UMAP
+            Comparación visual de distribuciones
+        Métricas de evaluación
+            F1-score
+                Balance entre precisión y sensibilidad
+            AUC-ROC
+                Área bajo la curva ROC para clasificación binaria
+    Discusión
+        Interpretabilidad clínica
+            Ventajas de prototipos en la práctica médica
+            Comparación con métodos tradicionales
+        Limitaciones del modelo
+            Dependencia de los datos de entrenamiento
+            Desafíos en datos multimodales
+        Impacto en la práctica médica
+            Aplicaciones en diagnóstico clínico
+            Posibilidades de implementación en hospitales
+    Conclusión
+        Relevancia del enfoque
+            Prototipos como herramienta explicativa
+            Conexión directa con especialistas
+        Posibles extensiones futuras
+            Integración de señales multimodales (e.g., ECG, imágenes)
+            Uso de GANs para mejorar generación de prototipos
